@@ -8,7 +8,8 @@
     "prestart": "npm run build",
     "start": "node ./dist/lib/index.js",
     "build": "tsc",
-    "test": "mocha -c dist/test/**/*.test.js"
+    "test": "mocha -c dist/test/**/*.test.js",
+    "dev-db-connect": "winpty docker run -it --rm --link lineofnorth-postgres:postgres postgres psql -h postgres -U postgres -d lineofnorthtweetstore"
   },
   "repository": {
     "type": "git",
