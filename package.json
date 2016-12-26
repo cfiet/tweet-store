@@ -11,6 +11,9 @@
     "test": "mocha -c dist/test/**/*.test.js",
     "dev-db-connect": "winpty docker run -it --rm --link lineofnorth-postgres:postgres postgres psql -h postgres -U postgres -d lineofnorthtweetstore"
   },
+  "bin": {
+    "tweet-store": "dist/lib/index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cfiet/tweet-store.git"
