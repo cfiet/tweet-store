@@ -1,0 +1,1 @@
+import { IMock, Mock } from 'typemoq';

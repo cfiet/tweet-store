@@ -1,0 +1,17 @@
+{
+  "name": "tweet-store",
+  "dependencies": {
+    "Rx": "file:node_modules/rxjs/Rx.d.ts",
+    "amqplib": "registry:npm/amqplib#0.4.1+20160726143451",
+    "dotenv": "registry:dt/dotenv#2.0.0+20161103000434",
+    "lodash": "registry:npm/lodash#4.0.0+20161015015725",
+    "winston": "registry:dt/winston#0.0.0+20161122193333",
+    "yargs": "registry:npm/yargs#5.0.0+20160907000723"
+  },
+  "devDependencies": {
+    "chai": "registry:npm/chai#3.5.0+20160723033700"
+  },
+  "globalDevDependencies": {
+    "mocha": "registry:env/mocha#2.2.5+20160926180742"
+  }
+}
