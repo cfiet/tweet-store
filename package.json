@@ -4,15 +4,12 @@
   "description": "Saves Tweets to database for further processing",
   "main": "dist/index.js",
   "scripts": {
-    "postinstall": "typings install",
-    "prestart": "npm run build",
-    "start": "node ./dist/lib/index.js",
+    "prebuild": "typings install",
     "build": "tsc",
+    "prepublish": "npm run build",
+    "start": "node ./dist/lib/index.js",
     "test": "mocha -c dist/test/**/*.test.js",
     "dev-db-connect": "winpty docker run -it --rm --link lineofnorth-postgres:postgres postgres psql -h postgres -U postgres -d lineofnorthtweetstore"
-  },
-  "bin": {
-    "tweet-store": "dist/lib/index.js"
   },
   "repository": {
     "type": "git",
