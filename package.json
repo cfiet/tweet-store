@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Saves Tweets to database for further processing",
   "main": "dist/lib/index.js",
-  "bin": "./dist/lib",
+  "bin": "./dist/lib/index.js",
   "scripts": {
     "build": "tsc",
     "prepublish": "typings install && npm run build",
